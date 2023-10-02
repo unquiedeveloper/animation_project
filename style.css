@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(120, 238, 120);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo{
+    width: 9vw;
+    height: 10vh;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: fit;
+    box-shadow: 2px 3px 6px black ;
+    transition: 0.5s ease-in-out;
+}
+
+.small-box:hover .logo{
+    scale: 0;
+}
+
+.small-box:hover{
+    border-radius: 5%;
+    width: 40vw;
+    height: 70vh;
+}
+
+.small-box{
+    width: 8vw;
+    height: 10vh;
+    background-color: rgb(17, 137, 61);
+    border-radius: 50%;
+    box-shadow: 2px 3px 6px black;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* position: relative; */
+    color: white;
+}
+
+
+.bottle{
+    position: absolute;
+    top: 95px;
+    left: 60%;
+    width: 10vw;
+    height: auto;
+    object-fit: cover;
+    rotate: 15deg;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.small-box:hover .bottle{
+    opacity: 1;
+}
+
+.right{
+    width: 50%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.small-box:hover .right{
+    opacity: 1;
+}
+
+.left{
+    width: 50%;
+    /* padding-right: 30px;
+    margin-right: 20px; */
+}
+
+.btn{
+    color: yellow;
+    background-color: rgb(1, 74, 1);
+    border: none;
+    padding: 1em;
+    border-radius: 20px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.btn:hover{
+    color: white;
+    cursor: pointer;
+    scale: 1.1;
+}
